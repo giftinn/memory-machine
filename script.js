@@ -9,108 +9,106 @@ let ticketReady = false;
 let currentPage = "intro";
 
 const reasons = `
-
-  1. I love the way you smile.
-  2.I love how you say my name.
-  3. You make ordinary days feel special.
-  4. You make me feel safe.
-  5. You always listen to me sincerely.
-  6. You’re always there when I need you.
-  7. I love your laugh.
-  8. You make me want to be a better person.
-  9. You understand me without words.
-  10. You’re so patient with me.
-  11. I love your eyes.
-  12. I love your voice.
-  13. You always believe in me.
-  14. You make me feel loved every single day.
-  15. You accept all my flaws.
-  16. You always support my dreams.
-  17. You make me comfortable being myself.
-  18. I love how caring you are.
-  19. You always calm me down.
-  20. You feel like home to me.
-  21. I love talking to you for hours.
-  22. You make me excited to wake up every morning.
-  23. You always know how to make me smile.
-  24. You never give up on us.
-  25. I love the way you look at me.
-  26. You’re always honest with me.
-  27. You have such a kind heart.
-  28. You make my life more colorful.
-  29. You always respect me.
-  30. I love laughing with you.
-  31. You make me believe in true love.
-  32. You remember the little things about me.
-  33. You make me feel special.
-  34. You always try to understand my feelings.
-  35. I love your hugs.
-  36. You make every problem feel lighter.
-  37. You are my happiness.
-  38. You always make me feel enough.
-  39. I love your sense of humor.
-  40. You always treat me with kindness.
-  41. You never get tired of listening to my stories.
-  42. You make me feel confident.
-  43. I love your positive energy.
-  44. You bring peace into my life.
-  45. You make me feel lucky.
-  46. I love the way you love me.
-  47. You always make me feel prioritized.
-  48. You teach me patience.
-  49. You are my favorite place to go to.
-  50. I love everything about you.
-  51. You always make me laugh when I’m sad.
-  52. You make me feel important.
-  53. I love the way you treat people.
-  54. You have a unique way of making everything better.
-  55. You support me even when I don’t ask.
-  56. You make me feel less alone.
-  57. You always remind me to take care of myself.
-  58. You make love feel simple and beautiful.
-  59. I love your little acts of care.
-  60. You inspire me to grow every day.
-  61. You accept my mood swings.
-  62. I love how you encourage me.
-  63. You create beautiful memories with me.
-  64. You’re the first person I want to talk to.
-  65. I love your cute jealousy sometimes.
-  66. You always make me feel wanted.
-  67. You have my favorite smile.
-  68. I love the way you comfort me.
-  69. You love me unconditionally.
-  70. You always believe in my abilities.
-  71. I love the sound of your laughter.
-  72. You make my life feel complete.
-  73. You always give me comfort.
-  74. I love the way you secretly care for me.
-  75. You teach me what healthy love feels like.
-  76. You always make time for me.
-  77. I love how you express your love.
-  78. You make me feel safe being myself.
-  79. You’re always on my mind.
-  80. I love how calmly you handle problems.
-  81. You make me feel appreciated.
-  82. You always make me feel important.
-  83. I love every little moment with you.
-  84. You make me less afraid of the future.
-  85. You always protect my feelings.
-  86. I love the way you show affection.
-  87. You make me feel incredibly lucky to have you.
-  88. You’re the best person to lean on.
-  89. I love when you compliment the little things about me.
-  90. You make me feel enough just by being here.
-  91. You always understand when I’m tired.
-  92. I love all your little attentions.
-  93. You make me believe we can get through anything together.
-  94. You’re always the reason behind my random smiles.
-  95. I love when you say you miss me.
-  96. I love our comfortable silence.
-  97. You make my life feel warmer.
-  98. You are my favorite person.
-  99. I can’t imagine my life without you.
-  100. Because you are you, and that alone is enough.
-
+ 1. I love the way your eyes light up when you are genuinely happy.
+ 2. I love how you make me feel safe even when everything around us is chaotic.
+ 3. I love the sound of your laughter; it’s my absolute favorite song.
+ 4. I love that we were able to find our way back to each other after being broken.
+ 5. I love how incredibly patient you are with me, even when I am difficult.
+ 6. I love how you forgive my flaws and see the best in me.
+ 7. I love the way you speak about the things you are passionate about.
+ 8. I love how your hand feels perfectly placed when it's holding mine.
+ 9. I love the warmth of your presence that instantly calms my overthinking mind.
+ 10. I love how you can make me smile with just a single text message.
+ 11. I love that you are both my lover and my very best friend.
+ 12. I love how maturely you handled our comeback and our healing process.
+ 13. I love the way you look at me, making me feel like I’m the only person in the room.
+ 14. I love your kindness, not just to me, but to everyone around you.
+ 15. I love how you remember the tiny little details I mention in passing.
+ 16. I love the way you smell; it instantly feels like home to me.
+ 17. I love that you don't give up on us, even when the road gets bumpy.
+ 18. I love how intelligent and thoughtful your perspectives on life are.
+ 19. I love how you make ordinary days feel like a beautiful adventure.
+ 20. I love your sense of humor and how we share our own inside jokes.
+ 21. I love that you are the first person I want to share good news with.
+ 22. I love how you comfort me without needing to say many words.
+ 23. I love the way you look when you are deeply focused on something.
+ 24. I love how you make me want to become a better version of myself every day.
+ 25. I love that your heart is gentle, sweet, and incredibly pure.
+ 26. I love how you support my dreams, no matter how silly or big they seem.
+ 27. I love the feeling of reassurance I get every time you say "I love you."
+ 28. I love how we can talk for hours about everything and absolutely nothing.
+ 29. I love how comfortable our comfortable silences are.
+ 30. I love your resilience and how strong you are as a person.
+ 31. I love the way you style yourself; you look beautiful in absolutely everything.
+ 32. I love how you respect my boundaries and my personal space.
+ 33. I love that you accepted my apology and allowed us to start fresh.
+ 34. I love the voice notes you send me; I re-listen to them when I miss you.
+ 35. I love how you protect your peace but always make room for me.
+ 36. I love how you make me feel valued, appreciated, and deeply wanted.
+ 37. I love the creative way your mind works.
+ 38. I love how you challenge me to think differently and grow.
+ 39. I love that you are the last thing on my mind before I sleep and the first when I wake up.
+ 40. I love how you look when you smile sleepily.
+ 41. I love your cute little habits that you probably don’t even notice you do.
+ 42. I love how you make me feel grounded when my anxiety takes over.
+ 43. I love that you are my favorite distraction from the stressful world.
+ 44. I love how honest you are with me, even when the truth is hard.
+ 45. I love the way you treat people with genuine empathy.
+ 46. I love that our souls feel so deeply connected, no matter what happens.
+ 47. I love how you make me believe in second chances and true love.
+ 48. I love the way you handle my mood swings with grace and tenderness.
+ 49. I love how you celebrate my small victories like they are massive achievements.
+ 50. I love that you know exactly how to cheer me up when I’m feeling down.
+ 51. I love your soft, gentle voice when you speak to me gently.
+ 52. I love how we can be completely weird and silly together without any judgment.
+ 53. I love the history we share, because it made us who we are today.
+ 54. I love how you make me feel like I finally belong somewhere.
+ 55. I love the way you stand up for what you believe in.
+ 56. I love that you are my favorite person to dream about the future with.
+ 57. I love how you always find a way to make time for me despite your busy schedule.
+ 58. I love your random texts that show me I was randomly on your mind.
+ 59. I love how you look past my mistakes and choose to focus on our growth.
+ 60. I love the pure innocence in your smile.
+ 61. I love how you hold your ground but always remain soft-hearted.
+ 62. I love the way you make me feel so lucky to be loved by someone like you.
+ 63. I love that you are my safe place to vent about my bad days.
+ 64. I love how you love animals and show compassion to the world.
+ 65. I love your taste in things—music, movies, and life in general.
+ 66. I love how you make me feel completely free to be my raw, authentic self.
+ 67. I love the way you say my name; it sounds special coming from you.
+ 68. I love that we can overcome any misunderstanding because we communicate.
+ 69. I love how you notice when something is wrong with me even before I say it.
+ 70. I love your beautiful mind and the way you process your emotions.
+ 71. I love that you are the peace I look forward to at the end of every exhausting day.
+ 72. I love how you look in casual clothes just as much as when you’re dressed up.
+ 73. I love the way your presence fills up a room without you even trying.
+ 74. I love that you taught me the true meaning of fighting for someone you love.
+ 75. I love how you value our relationship and don't take it for granted.
+ 76. I love your sweet, reassuring compliments that always boost my confidence.
+ 77. I love how you can read my expressions so perfectly.
+ 78. I love that you are my anchor when I feel like I'm drifting away.
+ 79. I love how you never make me feel like I’m asking for too much love.
+ 80. I love the way you hold onto hope, even when times are tough.
+ 81. I love how you make me sentimental about every memory we create.
+ 82. I love your elegant and beautiful soul.
+ 83. I love how you remember our special dates, even if we miss celebrating them.
+ 84. I love that you are the person I want to hold close when it rains.
+ 85. I love how you bring so much vibrant color into my otherwise dull days.
+ 86. I love your cute pout and the little expressions you make.
+ 87. I love how you trust me with your vulnerabilities and secrets.
+ 88. I love that you are my definition of happiness.
+ 89. I love how you make me feel protected and cherished.
+ 90. I love the way you never let me go to sleep feeling unloved.
+ 91. I love that you are my favorite topic to talk about with others.
+ 92. I love how you make me feel like everything is going to be alright.
+ 93. I love the way you love me, so selflessly and beautifully.
+ 94. I love that we survived the breakup and came back ten times stronger.
+ 95. I love how your love feels like a warm blanket on a freezing winter night.
+ 96. I love that you are my home, no matter where we are physically.
+ 97. I love how you inspire me to love more deeply and live more fully.
+ 98. I love the fact that out of billions of people, my heart chose you, and yours chose me.
+ 99. I love you for everything you were, everything you are, and everything you are yet to become.
+ 100. I love you simply because you are you, and I wouldn’t trade you for anything in the universe.
 `;
 
 function renderCardsPage(){
@@ -277,17 +275,16 @@ document.addEventListener("click",(e)=>{
           </div>
 
           <h3 class="memory-heading">
-            my dearest love,
+            My Dearest, Hardin Baradjie
           </h3>
 
           <p class="memory-text">
-
-              Sayaangg, happy mensive yaaa. From the very first moment we met, my heart knew it had found it’s home in you. You have this incredible way of making even the simplest things extraordinary. Whether it's a quiet evening together or a spontaneous adventure, every experience feels brighter and more meaningful with you by my side.
-
-              I admire your strength, your compassion, and the way you never fail to inspire me to be a better person. You are my safe haven, my greatest supporter, and my reason to smile each day. Your love fills my life with so much warmth and joy, and I hope you feel just as cherished and adored as you make me feel.
-
-              Thank you for everything we've done ya. You're the most precious and special things that ever happen to me, I would literally do anything to support you sayang, I love you more than any words can explain.
-
+            Happy 6th mensiversary since the day we decided to rewrite our story.
+            
+            I know we’ve been through a lot. We had our moments of silence, we faced the heartbreaking distance of breaking up, and we even let a whole month slip by without properly celebrating us. But standing here today, looking at how far we’ve come, none of those lost days matter anymore. What truly matters is now. It’s the fact that after everything we went through, after the storm cleared, my heart still led me straight back to you—and yours did the same for me.
+            Being able to be close to you again, to talk to you, and to have you back in my life is the greatest plot twist I could have ever asked for. I consider myself the luckiest person alive because even when things got broken, we chose to heal rather than stay apart. You have no idea how much it means to me that we can be good with each other again. You are my safe haven, and losing you made me realize just how empty the world is without your laughter.
+            I am so incredibly grateful for your presence. Thank you for giving us another chance, for being patient with me, and for existing in my world. This month, next month, and for all the months to come, please remember that I am here to stay. I love you more than words can express.
+            Forever yours.
           </p>
         </div>
       </div>
@@ -330,7 +327,7 @@ if(e.target.closest("#zipFolder")){
         >
 
         <h3 class="reasons-title">
-          reasons why i love you
+          100 REASON I LOVE YOU, DJIE.
         </h3>
 
         <div class="reasons-content">
@@ -367,7 +364,7 @@ if(e.target.closest(".card3")){
           <div class="letter-profile">
 
             <img
-            src="1.png"
+            src="2.png"
             alt=""
             >
 
@@ -392,15 +389,18 @@ if(e.target.closest(".card3")){
         <div class="letter-content">
 
           <p>
-
-            Happy 1st mensiversary sayaang, I still can’t believe it’s already been one month with you. Even though it sounds short, this past month honestly meant so much to me. Thank you for always being there, listening to my random thoughts, understanding my moods, and making my days feel happier just by talking to you.
-
-            Being with you made me realize that love can be found in the smallest things. All the late night talks, the random jokes, the little check-ups, and the way you always make me smile without even trying. Those little moments became my favorite part of everyday.
-
-            I know I’m not perfect and sometimes I can be difficult to handle, but thank you for staying patient with me and loving me anyway. I truly appreciate every effort, every sweet word, and every moment we shared together this past month. Your heart is so full of love, and I'm lucky enough to find a place there
-
-            I’m really grateful that I got to meet someone like you. Thank you for making me feel loved, safe, and happy. Happy mensive for both of us ya, baby. I love you so much
-
+            In the quiet space where time stands still,
+            We found our way back up the hill.
+            Through the shadows and the autumn rain,
+            Love brought us home, erasing the pain.
+            A month may have slipped like sand through our hands,
+            Unnoticed, unspoken, in love's changing lands.
+            But the calendar fades when I look in your eyes,
+            Where my past, my present, and my future lies.
+            Happy 6th mensiversary since our new dawn,
+            Every doubt is erased, every sorrow is gone.
+            To hold you again is the luckiest grace,
+            My favorite person, my ultimate place.
           </p>
 
         </div>
