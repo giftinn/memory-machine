@@ -235,7 +235,7 @@ ticket.addEventListener("click",()=>{
         >
 
           <img
-          src="1.png"
+          src="1.jpg"
           alt=""
           >
         </div>
@@ -263,7 +263,7 @@ document.addEventListener("click",(e)=>{
       <div class="memory-page">
         <div class="memory-paper">
           <p class="memory-date">
-            january
+            June
           </p>
 
           <div class="memory-top">
@@ -321,7 +321,7 @@ if(e.target.closest("#zipFolder")){
       <div class="reasons-paper">
 
         <img
-        src="2.jpg"
+        src="pict.jpg"
         class="reasons-photo"
         alt=""
         >
@@ -364,7 +364,7 @@ if(e.target.closest(".card3")){
           <div class="letter-profile">
 
             <img
-            src="2.png"
+            src="2.jpg"
             alt=""
             >
 
