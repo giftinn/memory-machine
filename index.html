@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Soft Arcade Machine</title>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+rel="stylesheet"
+/>
+
+<link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+
+<div class="machine">
+
+  <div class="machine-top">
+    <div class="star"></div>
+  </div>
+
+  <div class="screen-frame">
+
+    <div class="screen-top">
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="screen-buttons">
+        <div></div>
+      </div>
+
+    </div>
+
+    <div class="screen">
+
+        <div
+            class="screen-content"
+            id="screenContent">
+                <h2 class="screen-title">
+                would you like<br>
+                to print a ticket?
+                </h2>
+                <p class="screen-sub">
+                green = yes
+                </p>
+        </div>
+
+    </div>
+
+  </div>
+
+  <div class="control-panel">
+
+    <div class="joystick">
+      <div class="stick"></div>
+      <div class="ball"></div>
+    </div>
+
+    <div class="buttons">
+      <button
+      class="btn green"
+      id="yesBtn"
+      ></button>
+      <button
+      class="btn pink">
+      </button>
+
+    </div>
+
+  </div>
+
+        <div class="bottom-panel">
+
+            <div class="ticket-wrapper">
+
+                <div class="ticket-slot"></div>
+
+                <div
+                class="ticket"
+                id="ticket"
+                >
+                Ticket
+                </div>
+
+            </div>
+
+            <div class="lights">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+        </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+<audio id="bgMusic" loop>
+
+  <source
+  src="https://giftinn.github.io/music-host/fix.mp3"
+  type="audio/mpeg">
+
+</audio>
+
+</body>
+</html>
